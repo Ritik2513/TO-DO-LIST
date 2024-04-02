@@ -15,7 +15,7 @@ function Item(props) {
         <span className="pr-2 text-[12px] text-slate-400">
             {props.time}
             </span>
-        <span className={`${done === true ? "line-through" : ""} text-[18px]`}>
+        <span className={`${done === true ? "line-through" : ""} text-[20px] font-bold`}>
           {props.item}
         </span>
       </div>

@@ -6,12 +6,11 @@ import Index from './Components/Index'
 function App() {
   const [todo, setToDo] = useState([]);
   const removeToDo = (id) =>{
-    console.log(id)
     const newToDos = todo.filter
     (
       (d,index)=>
       {
-        if(index !== id)
+        if(index != id)
         {
           return true;
         }
@@ -36,8 +35,10 @@ function App() {
   }
   return (
     <>
-    <div className="bg-black h-screen p-3">
-      <div className="rounded mx-auto max-w-[650px] min-h-[450px] shadow-2xl bg-white">
+    <div className="bg-gradient-to-r from-indigo-500 via-purple-500
+    
+    h-screen p-6">
+      <div className="rounded mx-auto max-w-[650px] min-h-[450px] shadow-2xl bg-[#F3D7CA] p-5">
         <Index handler={addToHandler}/>
         <Box data={todo} removeHandler ={removeToDo}/>
       </div>
